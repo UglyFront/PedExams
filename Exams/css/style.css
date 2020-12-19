@@ -40,6 +40,7 @@ ul ul {
     margin-top: 1075px;
 }
 
+
 ul ul li {
     background: rgb(33, 192, 255, 0.3);
     border-bottom: 1px solid #fff;
@@ -61,25 +62,29 @@ li {
     justify-content: center;
     margin-right: 10px;
 }
+
+
 nav ul ul {
     display: none;
 }
+
 nav ul li:hover > ul{
-    display:inherit;
+    display: inherit;
 }
 
 .btn {
     background: rgb(33, 192, 255, 0.6);
     color: #fff;
     transition: 0.3s;
-    border-left: 1px solid #fff;
 }
 
 .btn:hover {
     background: rgb(33, 192, 255);
+    display: flex;
+    justify-content: end;
 }
 
-.info {
+#info {
     width: 100%;
     height: 100vh;
     margin: 0 auto;
@@ -92,11 +97,24 @@ nav ul li:hover > ul{
 }
 
 @media only screen and (max-width: 700px) {
-    .info {
+    ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .btn {
+        width: 150px;
+        
+    }
+    #info {
         height: 100%;
+        margin: 0 auto;
+        margin-top: 50px;
     }
     ul li li {
         position: relative;
-        top: -68px
+        width: 150px;
+        top: -62px;
+        left: -105px;
     }
 }
